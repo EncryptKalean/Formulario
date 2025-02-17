@@ -1,0 +1,73 @@
+/* Presets */
+body{
+    background-color: rgba(42, 14, 199, 0.74);
+    height: 100vh;
+    padding: 1%;
+    justify-items: center;
+    align-content: center;
+}
+
+*{
+    border-radius: 10px;
+    text-transform: capitalize;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* ------- */
+
+form .titulo{
+    background-color: black;
+    color: white;
+    height: 50px;
+    border-radius: 0;
+    align-content: center;
+}
+
+form{
+    width: 100%;
+    max-width: 800px;
+    background-color: white; 
+    padding-bottom: 1.5%;
+    border: 5px solid black;
+    text-align: center;
+}
+
+form > div:not(.titulo){
+    display: flex;
+    margin: 45px 0;
+    align-items: center;
+}
+
+form div h2{
+    width: 25%;
+}
+
+form input, select{
+    margin: 0 2%;
+    padding: 0 1.5%;
+    width: 75%;
+    height: 50px;
+    font-size: 18px;
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
+form .nome input{
+    width: 35%;
+}
+
+form input[type="submit"], form input[type="file"]{
+    margin: 10px auto;
+    width: 96%;
+    align-content: center;
+}
+/* Todas as regras começam com "form" por que escrevi como se estivesse pronto para colocar em outro site. */
+/* Remover setas do type="number" */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
