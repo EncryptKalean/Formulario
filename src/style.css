@@ -28,30 +28,31 @@ form .titulo{
 }
 
 form{
+    max-height: 96vh;
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
     background-color: white; 
-    padding-bottom: 1.5%;
     border: 5px solid black;
     text-align: center;
 }
 
 form > div:not(.titulo){
     display: flex;
-    margin: 45px 0;
+    margin: 4% 0;
     align-items: center;
 }
 
 form div h2{
     width: 25%;
+    font-size: 21px;
 }
 
 form input, select{
     margin: 0 2%;
     padding: 0 1.5%;
     width: 75%;
-    height: 50px;
-    font-size: 18px;
+    height: 45px;
+    font-size: 17px;
     background-color: rgba(128, 128, 128, 0.3);
 }
 
@@ -60,11 +61,13 @@ form .nome input{
 }
 
 form input[type="submit"], form input[type="file"]{
-    margin: 10px auto;
+    margin: 1% auto;
     width: 96%;
     align-content: center;
 }
+
 /* Todas as regras começam com "form" por que escrevi como se estivesse pronto para colocar em outro site. */
+
 /* Remover setas do type="number" */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
